@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.scss">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📔</text></svg>">
+    <title>Take Notes !</title>
+</head>
+
+<body>
+    <div class="modal-container">
+        <div class="modal">
+            <button class="modal__btn">&times;</button>
+            <h2 class="modal__title"></h2>
+            <p class="modal__body"></p>
+        </div>
+    </div>
+    <div class="form-container">
+        <h1>Take Notes !</h1>
+        <h3>Add a new note :</h3>
+        <form>
+            <label for="title">Note Title
+                <input type="text" id="title" placeholder="Enter a note title"></label>
+            <label for="note">Note
+                <textarea name="note" id="note" cols="30" rows="10" placeholder="Enter note text"></textarea></label>
+            <input type="submit">
+        </form>
+
+    </div>
+    <div class="note-container"></div>
+    <script src="./note.js"></script> <!--Defer it by using it in head aswell -->
+</body>
+
+</html>
